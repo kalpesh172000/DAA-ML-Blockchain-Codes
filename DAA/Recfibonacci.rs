@@ -5,7 +5,7 @@ fn main()
     print!("Enter how many fibonacci numbers you want to be printed: ");
     std::io::stdout().flush().unwrap();
     std::io::stdin().read_line(&mut inputstream).expect("Failed to read input"); 
-    let n:u16 = inputstream.trim().parse().expect("Invalid input");
+    let n:i16 = inputstream.trim().parse().expect("Invalid input");
     let mut a = 0;
     let mut b = 1;
     println!("1. {}",a);
@@ -16,4 +16,15 @@ fn main()
         a = b;
         b = c;
     }
+    println!("Fibonacci number at position {} is {}",n,fibonacci(n-2));
+}
+
+
+fn fibonacci(n:i16) -> i16
+{
+    if n<=1
+    {
+        return 1;
+    }
+    return fibonacci(n-1) + fibonacci (n-2);
 }
