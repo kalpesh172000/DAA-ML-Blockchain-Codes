@@ -1,4 +1,13 @@
 *
+!/BC/
+!/BC/*.sol
+!/ML/
+!/ML/*.ipynb
+!/ML/*.csv
 !/DAA/
+!/DAA/quicksort/
+!/DAA/quicksort/*.toml
+!/DAA/quicksort/src/
+!/DAA/quicksort/src/*.rs
 !/DAA/*.rs
 !.gitignore
