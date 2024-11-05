@@ -24,7 +24,7 @@ contract StudentData {
         students.push(newStudent);
         studentMap[studentId] = newStudent;
 
-        emit StudentAdded(studentId, name, age);
+        emit StudentAdded(studentId, name, age) ;
     }
 
     // Function to get student data by ID

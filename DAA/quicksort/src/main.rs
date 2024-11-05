@@ -1,3 +1,5 @@
+// rand = "0.8.5"
+
 use rand::Rng;
 use std::time::Instant;
 
