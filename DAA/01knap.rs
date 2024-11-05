@@ -23,3 +23,5 @@ fn main() {
     let n = weights.len();
     println!("Maximum profit : {} ",knapsack(capacity,&weights,&profits,n))
 }
+
+//2^n complexity 
